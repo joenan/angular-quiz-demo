@@ -1,6 +1,10 @@
-# Angular Redux Customer Feedback
+# Angular Quiz Demo
 
 <img src="https://github.com/joenan/Angular-Redux-Customer-Feedback/blob/main/demo.gif" title="React Redux Customer and Feedback Demo"/>
+
+##
+
+This application Loads quiz questions array from an end point and Implements a UI that renders a radio button multiple-choice input for each quiz question. When a user selects a choice, the progress bar is updated to reflect the number of questions answered. When the submit button is pressed, the text displays "1 out of 3 correct"
 
 ## Development server
 
