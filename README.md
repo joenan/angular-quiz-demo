@@ -1,6 +1,6 @@
 # Angular Quiz Demo
 
-<img src="https://github.com/joenan/Angular-Redux-Customer-Feedback/blob/main/demo.gif" title="React Redux Customer and Feedback Demo"/>
+<img src="https://github.com/joenan/angular-quiz-demo/blob/main/quizdemo.gif" title="Angular Quiz Demo"/>
 
 ##
 
