@@ -27,7 +27,6 @@ export class QuizComponent implements OnInit {
       this.quizSize = data.length;
       this.quizOptions = data.choices
 
-
     },
       (error: any) => {
         console.log(error)
