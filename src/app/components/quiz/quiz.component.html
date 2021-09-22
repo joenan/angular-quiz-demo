@@ -1,0 +1,32 @@
+<div class="container">
+
+    <div> <label><strong>Progress</strong></label></div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" [attr.aria-valuenow]="50" [attr.aria-valuemax]="quizSize"
+            [style.width]="defaultPercentageQuizSize + '%'">
+            {{defaultPercentageQuizSize}}%
+        </div>
+    </div>
+
+    <div *ngFor="let arrayOfQuestions of quizQuestions">
+
+        <h5>{{arrayOfQuestions.id}} {{arrayOfQuestions.word}}</h5>
+
+        <div *ngFor="let options of arrayOfQuestions.choices">
+            <div class="form-check">
+                <input (click)="optionRadioButtonClicked(quizQuestions[arrayOfQuestions.id-1], options, $event)"
+                    class="form-check-input" type="radio" name="flexRadioDefault" id="{{arrayOfQuestions.id}}">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    {{options.text}}
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="submit-btn">
+        <label class="score-text">{{defaultScoreText}}</label>
+        <button (click)="submit()" class="btn btn-primary">Submit</button>
+    </div>
+
+</div>
